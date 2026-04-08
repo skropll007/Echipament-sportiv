@@ -5,8 +5,8 @@
 }
 
 nav{
-    background: rgb(76, 170, 205);
-    padding: 1rem 2rem;
+    background: rgb(204, 228, 255);
+    padding: 1rem 1rem;
     width: 90%;             
     margin: 20px auto;      
     border-radius: 25px;
@@ -17,6 +17,7 @@ nav{
 
 .logo img {
     height: 45px;
+    border-radius: 30px;
     display: block;
 }
 
@@ -39,8 +40,8 @@ nav ul li a {
     text-decoration: none;
     padding: 0.5rem 1rem;
     display: block;
-    font-size: 1.2rem;
-    font-weight: bold;
+    font-size: 1.1rem;
+    font-family: 'Courier New', Courier, monospace;
     position: relative; 
     transition: transform 0.3s;
 }
