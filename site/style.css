@@ -43,7 +43,7 @@
   height: 100vh;
   width: 100%;
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
-              url('../assets/img/introo.jpg');
+              url('../assets/img/IMG_5100.JPG');
   background-size: cover;
   background-position: center;
   display: flex;
@@ -207,8 +207,7 @@
   height: 400px;
   width: 100%;
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
-              url('https://st.depositphotos.com/1155346/3507/i/450/depositphotos_35074121-stock-photo-dumbbell-in-fitness-room.jpg');
-  background-size: cover;
+              url('../assets/img/IMG_5419.PNG');
   background-position: center;
   background-attachment: fixed;
   display: flex;
