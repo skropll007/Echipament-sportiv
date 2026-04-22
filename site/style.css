@@ -229,3 +229,81 @@
   margin-bottom: 30px;
   color: #cbd5e0;
 }
+.footer {
+  background: #0b1a2c;
+  color: #ccc;
+  padding: 50px 20px 20px;
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+}
+
+.footer-col h3 {
+  color: white;
+  margin-bottom: 15px;
+}
+
+.footer-col p {
+  margin-bottom: 10px;
+}
+
+.footer-col ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-col ul li {
+  margin-bottom: 8px;
+}
+
+.footer-col ul li a {
+  color: #ccc;
+  text-decoration: none;
+}
+
+.footer-col ul li a:hover {
+  color: white;
+}
+
+.logo span {
+  color: #3b82f6;
+}
+
+.social-icons {
+  margin-top: 15px;
+}
+
+.social-icons i {
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.footer-bottom {
+  border-top: 1px solid #1f2d40;
+  margin-top: 30px;
+  padding-top: 15px;
+  text-align: center;
+  color: #888;
+}
+.about-hero {
+  background: url('../assets/img/IMG_5570.JPG');
+    background-position: center;
+  background-attachment: fixed;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  padding: 100px 20px;
+}
+.about-content {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  padding: 50px;
+}
+
+.about-content img {
+  width: 300px;
+  border-radius: 10px;
+}
