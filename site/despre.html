@@ -2,39 +2,150 @@
 <html lang="ro">
 <head>
     <meta charset="UTF-8">
-    <title>Acasă</title>
+    <title>Despre</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <nav class="navbar">
-  <div class="logo">
-    Sport<span>Fit</span>
-  </div>
-  <ul class="nav-links">
-    <li><a href="index.html">Acasă</a></li>
-    <li><a href="despre.html">Despre</a></li>
-    <li><a href="produse.html" class="active">Produse</a></li>
-    <li><a href="comanda.html">Comandă</a></li>
-  </ul>
+ <nav class="navbar" id="navbar">
+    <div class="nav-container">
+        <a href="index.html" class="logo-navbar">Sport<span class="logo-span">Fit</span></a>
+        
+        <ul class="nav-links">
+            <li><a href="index.html">Acasă</a></li>
+            <li><a href="produse.html">Produse</a></li>
+            <li><a href="comanda.html">Comanda</a></li>
+            <li><a href="despre.html" class="active" >Despre Noi</a></li>
+            <li><a href="login.html" class="btn-login-nav">Log In</a></li>
+        </ul>
+        
+        <button class="hamburger" id="hamburger">
+            <span></span><span></span><span></span>
+        </button>
+    </div>
 </nav>
+
+<div class="mobile-menu" id="mobileMenu">
+    <a href="index.html" class="active">Acasă</a>
+    <a href="produse.html">Produse</a>
+    <a href="comanda.html">Comanda</a>
+    <a href="despre.html">Despre Noi</a>
+    <a href="login.html" style="color: #007bff; font-weight: bold;">Log In</a>
+</div>
+
  
 <section class="about-hero">
-  <h1>Despre SportFit</h1>
-  <p>Inspirăm performanța prin echipamente sportive de top</p>
+    <h1>Despre SportFit</h1>
+    <p>De 10 ani, suntem partenerul tău de încredere în atingerea obiectivelor sportive.</p>
 </section>
 
-<section class="about-content">
-  <div class="text">
-    <h2>Povestea Noastră</h2>
-    <p>
-      SportFit a fost creat pentru a oferi sportivilor cele mai bune echipamente.
-    </p>
-  </div>
-
-  <div class="image">
-    <img src="assets/img/sport.jpg" alt="">
-  </div>
+<section class="story-section">
+    <div class="story-container">
+        <div class="story-text">
+            <h2>Povestea Noastră</h2>
+            <p>SportFit a început cu o misiune simplă: să aducă echipament de top oricărui pasionat de mișcare. Ceea ce a pornit dintr-un mic atelier a devenit astăzi un brand recunoscut pentru calitate și inovație.</p>
+            <p>Credem în puterea sportului de a schimba vieți. De aceea, selectăm cu grijă fiecare produs, asigurându-ne că oferă suportul necesar pentru performanță maximă și confort zilnic.</p>
+        </div>
+        <div class="story-image">
+            <img src="../assets/img/antrenament.jpg" alt="Antrenament SportFit">
+        </div>
+    </div>
 </section>
+
+<section class="stats-bar">
+    <div class="stat-item">
+        <h3>50K+</h3>
+        <p>Clienți Fericiți</p>
+    </div>
+    <div class="stat-item">
+        <h3>500+</h3>
+        <p>Produse Premium</p>
+    </div>
+    <div class="stat-item">
+        <h3>15</h3>
+        <p>Ani Experiență</p>
+    </div>
+    <div class="stat-item">
+        <h3>98%</h3>
+        <p>Recomandă</p>
+    </div>
+</section>
+
+<section class="values-section">
+    <h2>Valorile Noastre</h2>
+    <div class="values-grid">
+        <div class="value-card">
+            <i data-lucide="target"></i>
+            <h3>Misiunea Noastră</h3>
+            <p>Să oferim echipament care să inspire activitate și un stil de viață sănătos.</p>
+        </div>
+        <div class="value-card">
+            <i data-lucide="users"></i>
+            <h3>Comunitate</h3>
+            <p>Suntem mai mult decât un magazin, suntem o familie unită de pasiune.</p>
+        </div>
+        <div class="value-card">
+            <i data-lucide="heart"></i>
+            <h3>Pasiune</h3>
+            <p>Punem suflet în tot ceea ce facem, de la selecție până la livrare.</p>
+        </div>
+        <div class="value-card">
+            <i data-lucide="trending-up"></i>
+            <h3>Inovație</h3>
+            <p>Căutăm mereu cele mai noi tehnologii în materiale și design.</p>
+        </div>
+    </div>
+</section>
+
+
+
+<footer class="footer">
+    <div class="footer-container">
+        <div class="footer-col">
+            <h2 class="logo">Sport<span>Fit</span></h2>
+            <p>Echipamentul tău sportiv de încredere pentru performanță maximă.</p>
+            <div class="social-icons">
+                <i data-lucide="facebook"></i>
+                <i data-lucide="instagram"></i>
+                <i data-lucide="twitter"></i>
+            </div>
+        </div>
+
+        <div class="footer-col">
+            <h3>Link-uri rapide</h3>
+            <ul>
+                <li><a href="index.html">Acasă</a></li>
+                <li><a href="despre.html">Despre noi</a></li>
+                <li><a href="produse.html">Produse</a></li>
+                <li><a href="comanda.html">Comandă</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-col">
+            <h3>Categorii</h3>
+            <ul>
+                <li>Îmbrăcăminte</li>
+                <li>Încălțăminte</li>
+                <li>Accesorii</li>
+                <li>Echipament</li>
+            </ul>
+        </div>
+
+        <div class="footer-col">
+            <h3>Contact</h3>
+            <p><i data-lucide="map-pin"></i> Str. Sportului Nr. 100, București</p>
+            <p><i data-lucide="phone"></i> 0740 123 456</p>
+            <p><i data-lucide="mail"></i> contact@sportfit.ro</p>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <p>© 2026 SportFit. Toate drepturile rezervate.</p>
+    </div>
+</footer>
+
+<script src="https://unpkg.com/lucide@latest"></script>
+<script>lucide.createIcons();</script>
+<script src="script.js"></script>
 </body>
 </html>

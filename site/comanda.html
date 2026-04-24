@@ -2,22 +2,36 @@
 <html lang="ro">
 <head>
     <meta charset="UTF-8">
-    <title>Acasă</title>
+    <title>Comandă</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <nav class="navbar">
-  <div class="logo">
-    Sport<span>Fit</span>
-  </div>
-  <ul class="nav-links">
-    <li><a href="index.html">Acasă</a></li>
-    <li><a href="despre.html">Despre</a></li>
-    <li><a href="produse.html" class="active">Produse</a></li>
-    <li><a href="comanda.html">Comandă</a></li>
-  </ul>
+<nav class="navbar" id="navbar">
+    <div class="nav-container">
+        <a href="index.html" class="logo-navbar">Sport<span class="logo-span">Fit</span></a>
+        
+        <ul class="nav-links">
+            <li><a href="index.html">Acasă</a></li>
+            <li><a href="produse.html">Produse</a></li>
+            <li><a href="comanda.html" class="active">Comanda</a></li>
+            <li><a href="despre.html">Despre Noi</a></li>
+            <li><a href="login.html" class="btn-login-nav">Log In</a></li>
+        </ul>
+        
+        <button class="hamburger" id="hamburger">
+            <span></span><span></span><span></span>
+        </button>
+    </div>
 </nav>
+
+<div class="mobile-menu" id="mobileMenu">
+    <a href="index.html" class="active">Acasă</a>
+    <a href="produse.html">Produse</a>
+    <a href="comanda.html">Comanda</a>
+    <a href="despre.html">Despre Noi</a>
+    <a href="login.html" style="color: #007bff; font-weight: bold;">Log In</a>
+</div>
 
 </body>
 </html>
