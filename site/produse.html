@@ -2,14 +2,14 @@
 <html lang="ro">
 <head>
     <meta charset="UTF-8">
-    <title>Pro</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Produse - SportFit</title>
+    <link rel="stylesheet" href="produse.css">
 </head>
 <body>
 
- <nav class="navbar" id="navbar">
+<nav class="navbar" id="navbar">
     <div class="nav-container">
-        <a href="index.html" class="logo">Sport<span>Fit</span></a>
+        <a href="index.html" class="logo-navbar">Sport<span class="logo-span">Fit</span></a>
         
         <ul class="nav-links">
             <li><a href="index.html">Acasă</a></li>
@@ -33,5 +33,71 @@
     <a href="login.html" style="color: #007bff; font-weight: bold;">Log In</a>
 </div>
 
+<div class="hero">
+  <h1>Catalogul Nostru</h1>
+  <p>Descoperă peste 500 de produse premium pentru toate tipurile de antrenament</p>
+</div>
+
+<div class="container">
+  <div class="tabs-wrap">
+    <div class="tabs">
+      <button class="tab active" data-cat="0">Toate</button>
+      <button class="tab" data-cat="1">Îmbrăcăminte</button>
+      <button class="tab" data-cat="2">Încălțăminte</button>
+      <button class="tab" data-cat="3">Echipament</button>
+    </div>
+  </div>
+  <div class="grid" id="grid"></div>
+</div>
+
+<div class="container">
+  <div class="stats">
+    <div class="stat">
+      <div class="stat-num">500+</div>
+      <div class="stat-label">Produse Disponibile</div>
+    </div>
+    <div class="stat">
+      <div class="stat-num">24/7</div>
+      <div class="stat-label">Suport Clienți</div>
+    </div>
+    <div class="stat">
+      <div class="stat-num">30 Zile</div>
+      <div class="stat-label">Drept de Retur</div>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <div class="footer-grid">
+    <div>
+      <div class="footer-logo">Sport<span>Fit</span></div>
+      <p class="footer-desc">Echipament de top pentru toate tipurile de antrenament, la prețuri accesibile.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Link-uri rapide</h4>
+      <a href="index.html">Acasă</a>
+      <a href="despre.html">Despre noi</a>
+      <a href="produse.html">Produse</a>
+      <a href="comanda.html">Comenzi</a>
+    </div>
+    <div class="footer-col">
+      <h4>Categorii</h4>
+      <a href="produse.html?categorie=1">Îmbrăcăminte</a>
+      <a href="produse.html?categorie=2">Încălțăminte</a>
+      <a href="produse.html?categorie=3">Echipament</a>
+    </div>
+    <div class="footer-col">
+      <h4>Contact</h4>
+      <p>Str. Sportului Nr. 100, București</p>
+      <p>0740 123 456</p>
+      <p>contact@sportfit.ro</p>
+    </div>
+  </div>
+  <div class="footer-bottom">© 2026 SportFit. Toate drepturile rezervate.</div>
+</footer>
+
+<div class="toast" id="toast">Produs adăugat în coș ✓</div>
+
+<script src="produse.js"></script>
 </body>
 </html>

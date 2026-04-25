@@ -1,0 +1,234 @@
+{
+  "categorii": [
+    { "id": 1, "nume": "Îmbrăcăminte sportivă" },
+    { "id": 2, "nume": "Încălțăminte" },
+    { "id": 3, "nume": "Echipamente fitness" }
+  ],
+
+  "produse": [
+    {
+      "id": 1,
+      "nume": "Tricou alergare Nike Dri-FIT",
+      "categorie_id": 1,
+      "brand": "Nike",
+      "pret_lei": 149.99,
+      "stoc": 60,
+      "marimi": ["S", "M", "L", "XL"],
+      "culori": ["negru", "alb", "albastru"],
+      "rating": 4.6
+    },
+    {
+      "id": 2,
+      "nume": "Pantaloni scurți Adidas Own the Run",
+      "categorie_id": 1,
+      "brand": "Adidas",
+      "pret_lei": 129.99,
+      "stoc": 45,
+      "marimi": ["S", "M", "L", "XL"],
+      "culori": ["negru", "gri"],
+      "rating": 4.4
+    },
+    {
+      "id": 3,
+      "nume": "Colanți compresie Under Armour",
+      "categorie_id": 1,
+      "brand": "Under Armour",
+      "pret_lei": 189.99,
+      "stoc": 38,
+      "marimi": ["XS", "S", "M", "L", "XL"],
+      "culori": ["negru", "bleumarin"],
+      "rating": 4.7
+    },
+    {
+      "id": 4,
+      "nume": "Jachetă impermeabilă Puma",
+      "categorie_id": 1,
+      "brand": "Puma",
+      "pret_lei": 349.99,
+      "stoc": 22,
+      "marimi": ["S", "M", "L", "XL", "XXL"],
+      "culori": ["negru", "verde militar", "roșu"],
+      "rating": 4.5
+    },
+    {
+      "id": 5,
+      "nume": "Top sport Decathlon",
+      "categorie_id": 1,
+      "brand": "Decathlon",
+      "pret_lei": 59.99,
+      "stoc": 80,
+      "marimi": ["XS", "S", "M", "L"],
+      "culori": ["roz", "negru", "albastru"],
+      "rating": 4.2
+    },
+    {
+      "id": 6,
+      "nume": "Pantofi alergare Nike Pegasus 40",
+      "categorie_id": 2,
+      "brand": "Nike",
+      "pret_lei": 499.99,
+      "stoc": 35,
+      "marimi": ["38", "39", "40", "41", "42", "43", "44", "45"],
+      "culori": ["negru/alb", "albastru/portocaliu"],
+      "rating": 4.9
+    },
+    {
+      "id": 7,
+      "nume": "Ghete fotbal Adidas Predator Edge",
+      "categorie_id": 2,
+      "brand": "Adidas",
+      "pret_lei": 699.99,
+      "stoc": 20,
+      "marimi": ["39", "40", "41", "42", "43", "44"],
+      "culori": ["negru/roșu"],
+      "rating": 4.8
+    },
+    {
+      "id": 8,
+      "nume": "Pantofi sală Puma Tazon 7",
+      "categorie_id": 2,
+      "brand": "Puma",
+      "pret_lei": 279.99,
+      "stoc": 28,
+      "marimi": ["38", "39", "40", "41", "42", "43", "44"],
+      "culori": ["negru/alb", "gri/albastru"],
+      "rating": 4.3
+    },
+    {
+      "id": 9,
+      "nume": "Bocanci drumeție Salomon X Ultra 4",
+      "categorie_id": 2,
+      "brand": "Salomon",
+      "pret_lei": 899.99,
+      "stoc": 15,
+      "marimi": ["39", "40", "41", "42", "43", "44", "45"],
+      "culori": ["olive/negru", "gri/portocaliu"],
+      "rating": 4.8
+    },
+    {
+      "id": 10,
+      "nume": "Adidași training Under Armour HOVR",
+      "categorie_id": 2,
+      "brand": "Under Armour",
+      "pret_lei": 449.99,
+      "stoc": 18,
+      "marimi": ["40", "41", "42", "43", "44", "45"],
+      "culori": ["negru", "alb/gri"],
+      "rating": 4.5
+    },
+    {
+      "id": 11,
+      "nume": "Ganteră cauciucată 10 kg",
+      "categorie_id": 3,
+      "brand": "Decathlon",
+      "pret_lei": 149.99,
+      "stoc": 30,
+      "greutate_kg": 10,
+      "rating": 4.5
+    },
+    {
+      "id": 12,
+      "nume": "Saltea yoga TPE 10mm",
+      "categorie_id": 3,
+      "brand": "Decathlon",
+      "pret_lei": 99.99,
+      "stoc": 55,
+      "culori": ["mov", "albastru", "verde"],
+      "rating": 4.6
+    },
+    {
+      "id": 13,
+      "nume": "Coardă sărit viteza",
+      "categorie_id": 3,
+      "brand": "Under Armour",
+      "pret_lei": 59.99,
+      "stoc": 75,
+      "rating": 4.2
+    },
+    {
+      "id": 14,
+      "nume": "Bandă de rezistență set 5 bucăți",
+      "categorie_id": 3,
+      "brand": "Decathlon",
+      "pret_lei": 79.99,
+      "stoc": 50,
+      "culori": ["multicolor"],
+      "rating": 4.4
+    },
+    {
+      "id": 15,
+      "nume": "Kettlebell fontă 16 kg",
+      "categorie_id": 3,
+      "brand": "Nike",
+      "pret_lei": 299.99,
+      "stoc": 20,
+      "greutate_kg": 16,
+      "rating": 4.7
+    }
+  ],
+
+  "clienti": [
+    {
+      "id": 1,
+      "nume": "Andrei Popescu",
+      "email": "andrei.popescu@gmail.com",
+      "telefon": "0722111222",
+      "oras": "București"
+    },
+    {
+      "id": 2,
+      "nume": "Elena Dumitrescu",
+      "email": "elena.d@yahoo.com",
+      "telefon": "0735333444",
+      "oras": "Cluj-Napoca"
+    },
+    {
+      "id": 3,
+      "nume": "Mihai Stancu",
+      "email": "mihai.s@gmail.com",
+      "telefon": "0740555666",
+      "oras": "Timișoara"
+    }
+  ],
+
+  "comenzi": [
+    {
+      "id": 1,
+      "client_id": 1,
+      "data": "2024-04-10",
+      "status": "livrata",
+      "produse": [
+        { "produs_id": 7, "cantitate": 1, "pret_unitar": 499.99 },
+        { "produs_id": 11, "cantitate": 2, "pret_unitar": 44.99 }
+      ],
+      "total_ron": 589.97,
+      "livrare_ron": 0,
+      "metoda_plata": "card"
+    },
+    {
+      "id": 2,
+      "client_id": 2,
+      "data": "2024-04-18",
+      "status": "in_procesare",
+      "produse": [
+        { "produs_id": 14, "cantitate": 1, "pret_unitar": 129.99 },
+        { "produs_id": 15, "cantitate": 2, "pret_unitar": 24.99 }
+      ],
+      "total_ron": 194.97,
+      "livrare_ron": 15.00,
+      "metoda_plata": "ramburs"
+    },
+    {
+      "id": 3,
+      "client_id": 3,
+      "data": "2024-04-22",
+      "status": "plasata",
+      "produse": [
+        { "produs_id": 10, "cantitate": 1, "pret_unitar": 1499.99 }
+      ],
+      "total_ron": 1499.99,
+      "livrare_ron": 0,
+      "metoda_plata": "transfer_bancar"
+    }
+  ]
+}
