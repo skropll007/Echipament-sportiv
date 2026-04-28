@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coșul Meu | SportFit</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="produse.css">
+    <link rel="stylesheet" href="cos.css">
+    <style>
+        body { font-family: sans-serif; }
+    </style>
+</head>
+<body>
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo-navbar">Sport<span class="logo-span">Fit</span></a>
+            <ul class="nav-links">
+                 <li><a href="index.html">Acasă</a></li>
+            <li><a href="produse.html">Produse</a></li>
+            <li><a href="comanda.html">Comanda</a></li>
+            <li><a href="despre.html">Despre Noi</a></li>
+             <li><a href="cos.html" class="active">Coș <span id="cartCount" class="cart-badge" style="display:none">0</span></a></li>
+            <li><a href="login.html" class="btn-login-nav">Log In</a></li>
+            </ul>
+            <button class="hamburger" id="hamburger">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="index.html">Acasă</a>
+        <a href="produse.html">Produse</a>
+        <a href="cos.html">Coș</a>
+        <a href="comanda.html">Comandă</a>
+        <a href="login.html" style="color: #2563eb; font-weight: bold;">Log In</a>
+    </div>
+
+    <!-- Hero -->
+    <div class="cart-hero">
+        <h1>Coșul Tău</h1>
+        <p>Verifică produsele selectate și finalizează comanda.</p>
+    </div>
+
+    <main class="cart-page">
+        <div id="cartContent" class="cart-wrapper"></div>
+
+        <div id="cartSummary" class="cart-summary" style="display:none;">
+            <div class="summary-row"><span>Subtotal</span><span id="subtotalVal">0.00 LEI</span></div>
+            <div class="summary-row"><span>Livrare</span><span id="livrareVal">15.00 LEI</span></div>
+            <div class="summary-row total"><span>TOTAL</span><span id="totalVal">0.00 LEI</span></div>
+            <div class="cart-actions">
+                <button id="clearCart" class="btn-secondary-cart">Golește coșul</button>
+                <button id="checkoutBtn" class="btn-primary-cart">Finalizează comanda →</button>
+            </div>
+        </div>
+    </main>
+
+    <!-- Modal comandă -->
+    <div id="modalOverlay" class="modal-overlay">
+        <div id="modalBox" class="modal-box">
+            <button id="btnCloseModal" class="modal-close" title="Închide">×</button>
+            <div id="modalContent">
+                <div class="modal-header">
+                    <div class="modal-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="28" height="28"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                    </div>
+                    <h3>Finalizează Comanda</h3>
+                    <p>Completează datele pentru livrare</p>
+                </div>
+                <div class="modal-fields">
+                    <div class="modal-field-group">
+                        <label>NUME COMPLET <span>*</span></label>
+                        <input type="text" id="fieldNume" placeholder="Ex: Popescu Ion" autocomplete="name">
+                    </div>
+                    <div class="modal-field-group">
+                        <label>TELEFON <span>*</span></label>
+                        <input type="tel" id="fieldTel" placeholder="07XX XXX XXX" autocomplete="tel">
+                    </div>
+                    <div class="modal-field-group">
+                        <label>ADRESĂ LIVRARE <span>*</span></label>
+                        <input type="text" id="fieldAdresa" placeholder="Stradă, număr, bloc, apartament, oraș" autocomplete="street-address">
+                    </div>
+                </div>
+                <div class="modal-total-row">
+                    <span>DE PLĂTIT</span>
+                    <span id="modalTotal" class="modal-total-val">— LEI</span>
+                </div>
+                <button id="btnConfirmOrder" class="btn-confirm">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18"><polyline points="20 6 9 17 4 12"/></svg>
+                    CONFIRMĂ COMANDA
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div id="toastContainer"></div>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-col">
+                <h2 class="logo">Sport<span>Fit</span></h2>
+                <p>Echipamentul tău sportiv de încredere pentru performanță maximă.</p>
+                <div class="social-icons">
+                    <i data-lucide="facebook"></i>
+                    <i data-lucide="instagram"></i>
+                    <i data-lucide="twitter"></i>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h3>Link-uri rapide</h3>
+                <ul>
+                    <li><a href="index.html">Acasă</a></li>
+                    <li><a href="despre.html">Despre noi</a></li>
+                    <li><a href="produse.html">Produse</a></li>
+                    <li><a href="comanda.html">Comandă</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Categorii</h3>
+                <ul>
+                    <li><a href="produse.html?categorie=1">Îmbrăcăminte</a></li>
+                    <li><a href="produse.html?categorie=2">Încălțăminte</a></li>
+                    <li><a href="produse.html?categorie=3">Echipament</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Contact</h3>
+                <p><i data-lucide="map-pin"></i> Str. Sportului Nr. 100, București</p>
+                <p><i data-lucide="phone"></i> 0740 123 456</p>
+                <p><i data-lucide="mail"></i> contact@sportfit.ro</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2026 SportFit. Toate drepturile rezervate.</p>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>lucide.createIcons();</script>
+    <script src="produse.js"></script>
+    <script src="cos.js"></script>
+</body>
+</html>

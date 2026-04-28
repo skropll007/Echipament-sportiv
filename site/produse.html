@@ -1,103 +1,117 @@
 <!DOCTYPE html>
 <html lang="ro">
 <head>
+    <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Produse - SportFit</title>
+    
     <link rel="stylesheet" href="produse.css">
 </head>
+    
+</head>
 <body>
-
-<nav class="navbar" id="navbar">
-    <div class="nav-container">
-        <a href="index.html" class="logo-navbar">Sport<span class="logo-span">Fit</span></a>
-        
-        <ul class="nav-links">
-            <li><a href="index.html">Acasă</a></li>
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo-navbar">Sport<span class="logo-span">Fit</span></a>
+            <ul class="nav-links">
+                <li><a href="index.html">Acasă</a></li>
             <li><a href="produse.html" class="active">Produse</a></li>
             <li><a href="comanda.html">Comanda</a></li>
             <li><a href="despre.html">Despre Noi</a></li>
+             <li><a href="cos.html">Coș <span id="cartCount" class="cart-badge" style="display:none">0</span></a></li>
             <li><a href="login.html" class="btn-login-nav">Log In</a></li>
-        </ul>
-        
-        <button class="hamburger" id="hamburger">
-            <span></span><span></span><span></span>
-        </button>
-    </div>
-</nav>
+            </ul>
+            <button class="hamburger" id="hamburger">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
 
-<div class="mobile-menu" id="mobileMenu">
-    <a href="index.html" class="active">Acasă</a>
-    <a href="produse.html">Produse</a>
-    <a href="comanda.html">Comanda</a>
-    <a href="despre.html">Despre Noi</a>
-    <a href="login.html" style="color: #007bff; font-weight: bold;">Log In</a>
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="index.html">Acasă</a>
+        <a href="produse.html">Produse</a>
+        <a href="cos.html">Coș</a>
+        <a href="comanda.html">Comandă</a>
+        <a href="login.html" style="color: #2563eb; font-weight: bold;">Log In</a>
+    </div>
+
+    <div class="hero">
+    <h1>Catalogul Nostru</h1>
+    <p>Descoperă peste 500 de produse premium pentru toate tipurile de antrenament</p>
 </div>
 
-<div class="hero">
-  <h1>Catalogul Nostru</h1>
-  <p>Descoperă peste 500 de produse premium pentru toate tipurile de antrenament</p>
-</div>
+    <div class="container">
+        <div class="tabs-wrap">
+            <div class="tabs">
+                <button class="tab active" data-cat="0">Toate</button>
+                <button class="tab" data-cat="1">Îmbrăcăminte</button>
+                <button class="tab" data-cat="2">Încălțăminte</button>
+                <button class="tab" data-cat="3">Echipament</button>
+            </div>
+        </div>
+        <div id="grid" class="grid"></div>
+    </div>
 
-<div class="container">
-  <div class="tabs-wrap">
-    <div class="tabs">
-      <button class="tab active" data-cat="0">Toate</button>
-      <button class="tab" data-cat="1">Îmbrăcăminte</button>
-      <button class="tab" data-cat="2">Încălțăminte</button>
-      <button class="tab" data-cat="3">Echipament</button>
+    <div id="cartOverlay"></div>
+    <div id="cartDrawer" class="cart-drawer">
+        <div class="cart-header">
+            <h2>Coșul tău</h2>
+            <button id="cartClose" class="cart-close-btn">✕</button>
+        </div>
+        <div id="cartItems" class="cart-items"></div>
+        <div id="cartFooter" class="cart-footer" style="display:none;">
+            <div class="cart-total-row">
+                <span>Total:</span>
+                <span id="cartTotal">0.00 LEI</span>
+            </div>
+            <button id="cartCheckout" class="btn-checkout">Finalizează comanda →</button>
+        </div>
     </div>
-  </div>
-  <div class="grid" id="grid"></div>
-</div>
+    <div id="toast" class="toast"></div>
 
-<div class="container">
-  <div class="stats">
-    <div class="stat">
-      <div class="stat-num">500+</div>
-      <div class="stat-label">Produse Disponibile</div>
-    </div>
-    <div class="stat">
-      <div class="stat-num">24/7</div>
-      <div class="stat-label">Suport Clienți</div>
-    </div>
-    <div class="stat">
-      <div class="stat-num">30 Zile</div>
-      <div class="stat-label">Drept de Retur</div>
-    </div>
-  </div>
-</div>
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-col">
+                <h2 class="logo">Sport<span>Fit</span></h2>
+                <p>Echipamentul tău sportiv de încredere pentru performanță maximă.</p>
+                <div class="social-icons">
+                    <i data-lucide="facebook"></i>
+                    <i data-lucide="instagram"></i>
+                    <i data-lucide="twitter"></i>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h3>Link-uri rapide</h3>
+                <ul>
+                    <li><a href="index.html">Acasă</a></li>
+                    <li><a href="despre.html">Despre noi</a></li>
+                    <li><a href="produse.html">Produse</a></li>
+                    <li><a href="comanda.html">Comandă</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Categorii</h3>
+                <ul>
+                    <li><a href="produse.html?categorie=1">Îmbrăcăminte</a></li>
+                    <li><a href="produse.html?categorie=2">Încălțăminte</a></li>
+                    <li><a href="produse.html?categorie=3">Echipament</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Contact</h3>
+                <p><i data-lucide="map-pin"></i> Str. Sportului Nr. 100, București</p>
+                <p><i data-lucide="phone"></i> 0740 123 456</p>
+                <p><i data-lucide="mail"></i> contact@sportfit.ro</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2026 SportFit. Toate drepturile rezervate.</p>
+        </div>
+    </footer>
 
-<footer>
-  <div class="footer-grid">
-    <div>
-      <div class="footer-logo">Sport<span>Fit</span></div>
-      <p class="footer-desc">Echipament de top pentru toate tipurile de antrenament, la prețuri accesibile.</p>
-    </div>
-    <div class="footer-col">
-      <h4>Link-uri rapide</h4>
-      <a href="index.html">Acasă</a>
-      <a href="despre.html">Despre noi</a>
-      <a href="produse.html">Produse</a>
-      <a href="comanda.html">Comenzi</a>
-    </div>
-    <div class="footer-col">
-      <h4>Categorii</h4>
-      <a href="produse.html?categorie=1">Îmbrăcăminte</a>
-      <a href="produse.html?categorie=2">Încălțăminte</a>
-      <a href="produse.html?categorie=3">Echipament</a>
-    </div>
-    <div class="footer-col">
-      <h4>Contact</h4>
-      <p>Str. Sportului Nr. 100, București</p>
-      <p>0740 123 456</p>
-      <p>contact@sportfit.ro</p>
-    </div>
-  </div>
-  <div class="footer-bottom">© 2026 SportFit. Toate drepturile rezervate.</div>
-</footer>
-
-<div class="toast" id="toast">Produs adăugat în coș ✓</div>
-
-<script src="produse.js"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>lucide.createIcons();</script>
+    <script src="produse.js"></script>
 </body>
 </html>

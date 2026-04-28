@@ -25,8 +25,9 @@ signInBtn.addEventListener('click', () => {
   const user = document.getElementById('username').value.trim();
   const pass = document.getElementById('password').value;
 
-  if (!user) { showToast('Please enter your username.'); return; }
-  if (!pass) { showToast('Please enter your password.'); return; }
+  if (!user) { showToast('Te rugăm să introduci email-ul.'); return; }
+  if (!user.endsWith("@gmail.com")) { showToast('Email-ul trebuie să fie de forma @gmail.com!'); return; }
+  if (!pass) { showToast('Te rugăm să introduci parola.'); return; }
 
   signInBtn.classList.add('loading');
   signInBtn.disabled = true;
@@ -34,7 +35,16 @@ signInBtn.addEventListener('click', () => {
   setTimeout(() => {
     signInBtn.classList.remove('loading');
     signInBtn.disabled = false;
-    showToast('Welcome back! 🍁', 'success');
+
+    const loginData = {
+      email: user,
+      data: new Date().toLocaleString('ro-RO')
+    };
+    const istoricLogin = JSON.parse(localStorage.getItem('istoricLogin') || '[]');
+    istoricLogin.push(loginData);
+    localStorage.setItem('istoricLogin', JSON.stringify(istoricLogin));
+
+    showToast('Bine ai revenit! ', 'success');
     setTimeout(() => {
       window.location.href = 'index.html';
     }, 1000);
